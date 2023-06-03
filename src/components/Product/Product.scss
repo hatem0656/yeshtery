@@ -1,0 +1,8 @@
+@import "../../helpers/Mixins.scss";
+@import "../../helpers/Variables.scss";
+
+.product {
+  .container {
+    @include container(40px, 0);
+  }
+}

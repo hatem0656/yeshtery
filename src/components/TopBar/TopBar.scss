@@ -1,0 +1,66 @@
+@import "../../helpers/Mixins.scss";
+@import "../../helpers/Variables.scss";
+
+.T-Bar {
+  width: 100%;
+  background-color: $primaryColor;
+  .container {
+    @include container(0px, 0px);
+  }
+  .icon-wrapper {
+    padding: 15px 0;
+    @include vertical-align();
+    margin-right: 32px;
+    cursor: pointer;
+  }
+  .logo-wrapper {
+    @include vertical-align();
+    padding: 9px 0;
+    margin-right: 60px;
+  }
+}
+
+.T-Bar {
+  p {
+    @include vertical-align();
+    flex-wrap: nowrap;
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 500;
+    .special {
+      margin-left: 10px;
+      text-decoration: underline;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .arrowOne,
+    .arrowTwo {
+      display: inline-block;
+      width: 7px;
+    }
+    .arrowOne {
+      margin-right: 15px;
+    }
+    .arrowTwo {
+      margin-left: 15px;
+      margin-right: 30px;
+    }
+  }
+}
+
+.links {
+  @include vertical-align();
+  flex: 1;
+  cursor: pointer;
+  & > div {
+    @include vertical-align();
+    font-size: 0.8rem;
+    font-weight: 800;
+    padding: 15px;
+  }
+  .image-wrapper {
+    @include vertical-align();
+    width: 15px;
+    margin-right: 8px;
+  }
+}
